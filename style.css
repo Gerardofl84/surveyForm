@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-image: url(https://www.haciendonetworkmarketing.com/wp-content/uploads/2022/04/fondoSurvey.png);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  margin: 13px;
+  padding: 33px;
+  border: 3px solid black;
+  border-radius: 13px;
+}
+
+button {
+  margin: 13px;
+  padding: 13px;
+}
+

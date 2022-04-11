@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <article class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Contact us for more information</p>
+        <form id="survey-form" action="submit" method="get">
+          <fieldset>
+            <p>
+              <label for="name" id="name-label">Name</label>
+              <input id="name" type="text" placeholder="Name" required>
+            </p>
+            <br>
+            <p>
+              <label for="email"id="email-label">Enter your email:</label>
+              <input type="email" id="email" name="email" placeholder="example@domain" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" multiple required>
+            </p>
+            <br>
+            <p>
+              <label for="number" id="number-label">Age</label>
+              <input type="number" id="number" name="number" min="1" max="100" placeholder="1-100">
+            </p>
+            <br>
+            <p>
+              <label>Favorite Pet</label>
+              <select id="dropdown">
+                <option>Dogs</option>
+                <option>Cats</option>
+                <option>Birds</option>
+              </select>
+            </p>
+            <br>
+            <p>
+              <fieldset>
+                <legend>Favorite Food</legend>
+                <p>
+                  <label for="tacos">Tacos</label>
+                  <input id="tacos" value="tacos" type="radio" name="food">
+                </p>
+                <p>
+                  <label for="hamburger">Hamburger</label>
+                  <input id="hamburger" value="hamburger" type="radio" name="food">
+                </p>
+                <p>
+                  <label for="hotCakes">Hot Cakes</label>
+                  <input id="hoCakes" value="hotCakes" type="radio" name="food">
+                </p>
+              </fieldset>
+            </p>
+            <p>
+              <fieldset>
+                <legend>Favorite Operating System</legend>
+                <p>
+                  <label for="windows">Windows</label>
+                  <input id="windows" value="windows" type="checkbox" name="os">
+                </p>
+                <p>
+                  <label for="macos">Mac Os</label>
+                  <input id="macos" value="macos" type="checkbox" name="os">
+                </p>
+                <p>
+                  <label for="linux">Linux</label>
+                  <input id="linux" value="linux" type="checkbox" name="os">
+                </p>
+              </fieldset>
+            </p>
+            <p>
+              <fieldset>
+                <legend>Additional Comments</legend>
+                <p>
+                  <label for="message"></label>
+                  <textarea id="message" placeholder="send a message" cols="30" rows="10"></textarea>
+                </p>
+              </fieldset>
+            </p>
+            <br>
+            <p>
+              <button type="submit" id="submit">submit</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
